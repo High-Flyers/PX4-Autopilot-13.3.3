@@ -189,6 +189,7 @@ set(worlds
 	warehouse
 	windy
 	yosemite
+	baylands_droniada
 )
 
 set(all_posix_vmd_make_targets)
