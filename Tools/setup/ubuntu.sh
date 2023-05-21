@@ -106,9 +106,13 @@ echo "Installing PX4 Python3 dependencies"
 if [ -n "$VIRTUAL_ENV" ]; then
 	# virtual envrionments don't allow --user option
 	python -m pip install -r ${DIR}/requirements.txt
+	pip uninstall opencv-python
+	pip install opencv_contrib_python-4.7.0.72-cp38-cp38-linux_x86_64.whl
 else
 	# older versions of Ubuntu require --user option
 	python3 -m pip install --user -r ${DIR}/requirements.txt
+	pip uninstall opencv-python
+	pip install opencv_contrib_python-4.7.0.72-cp38-cp38-linux_x86_64.whl
 fi
 
 # NuttX toolchain (arm-none-eabi-gcc)
