@@ -190,6 +190,7 @@ set(worlds
 	windy
 	yosemite
 	baylands_droniada
+	grass
 )
 
 set(all_posix_vmd_make_targets)
